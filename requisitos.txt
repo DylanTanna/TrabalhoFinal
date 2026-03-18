@@ -1,0 +1,29 @@
+Sistema de Software voltado para psicologos
+WEB
+
+tela inicial -
+    Vizi Saúde:
+    Acessar Sistema:
+    Sobre:
+    Soluões:
+    Blog:
+    Plano e preços:
+    Contato:
+
+
+-Sistema 360° //abrange todos os departamentos
+    ->Emissão de Boleto e NF-e
+    ->controle de repasses
+    ->gentao de contas a pagar e receber
+    ->conciliação bancaria em tempo real
+-IA: para fazer prontuarios inteligentes, agenda e confirma consultas em segundos
+-agendamento 24h
+-pagamentos online
+-PEP: Historico completo, acesso rapido e seguro
+-resuzir No-show: confirmação por whatsapp em datas proximas, reduzindo as ausencias
+-Atendimetno remoto seguro (conformidade com a LGPD)
+    ->Criptografia com segurança 
+    ->Questioarios para pre-anamnese
+    ->Documentos digitais enviados aos pacientes
+
+-Backup de dados
