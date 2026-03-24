@@ -1,0 +1,2 @@
+Kanban - entender o que é e implementar no github
+parte de perguntas e respostas

@@ -1,29 +1,65 @@
-Sistema de Software voltado para psicologos
-WEB
+Interface Inicial
 
-tela inicial -
-    Vizi Saúde:
-    Acessar Sistema:
-    Sobre:
-    Soluões:
-    Blog:
-    Plano e preços:
-    Contato:
+O sistema deve possuir uma página inicial contendo:
+
+Apresentação do sistema
+Área de acesso ao sistema
+    ->Login deve ser feito para poder contratar
+Seção para informações gerais
+Seção de soluções oferecidas
+Planos e preços (Com contato ao comerciante ou pelo sistema?)
+Funcionalidades do Sistema
+
+Discutir se o sistema vai conter a parte financeira. O que pede:
+-Emissão de notas fiscais eletrônicas
+-Emissão de boletos
+-Controle de repasses financeiros
+-Gestão de contas a pagar e a receber
+-Conciliação bancária
+-Pagamentos
+-Pagamentos online
 
 
--Sistema 360° //abrange todos os departamentos
-    ->Emissão de Boleto e NF-e
-    ->controle de repasses
-    ->gentao de contas a pagar e receber
-    ->conciliação bancaria em tempo real
--IA: para fazer prontuarios inteligentes, agenda e confirma consultas em segundos
--agendamento 24h
--pagamentos online
--PEP: Historico completo, acesso rapido e seguro
--resuzir No-show: confirmação por whatsapp em datas proximas, reduzindo as ausencias
--Atendimetno remoto seguro (conformidade com a LGPD)
-    ->Criptografia com segurança 
-    ->Questioarios para pre-anamnese
-    ->Documentos digitais enviados aos pacientes
+O sistema deve permitir:
 
+-Gestão de Agenda
+-Agendamento de consultas
+-Acesso a agenda dos profissionais (restrito ou 100% transparente?)
+-Disponibilidade de agendamento 24 horas \\diferente de ter atendimentos 24 horas
+-Confirmação de consultas por E-mail
+-Inteligencia Artificial para triagem
+-Auxilio na criação de prontuários
+-Automatização de tarefas simples, como confirmação de consultas
+-Prontuário Eletrônico (PEP) \\estudar mais sobre
+-Armazenamento do histórico do paciente (por quanto tempo? como fazer de forma segura?)
+-Organização dos dados clínicos
+-Registro das transações no sistema
+-Redução de faltas (No-show - como usar o whatsapp para isso?)
+-Envio de lembretes de consultas
+-Confirmação automática, por exemplo via WhatsApp
+-Atendimento remoto
+-Realização de consultas online
+-Comunicação entre profissional e paciente
+-Envio de documentos
+-Segurança e LGPD
+-Proteção dos dados dos usuários
+-Uso de criptografia
+-Controle de acesso
+-Pré-atendimento \\como fazer? IA?
+-Questionários para coleta de informações antes da consulta
+-Documentos digitais
+-Envio e armazenamento de documentos
 -Backup de dados
+-Backup das informações
+-Possibilidade de recuperação de dados
+
+
+Os dados sensíveis são informações que, se expostas, podem causar danos à privacidade do paciente. Entre eles estão:
+*Prontuários médicos;
+*Diagnósticos e resultados de exames;
+*Informações sobre tratamentos e histórico clínico;
+*Dados genéticos, comportamentais e de vida sexual.
+*Para proteger essas informações, o uso de tecnologias com controle de acesso, criptografia, autenticação em dois fatores e backups *regulares é indispensável.
+
+perguntar para a teacher: Como o cliente/usuário/paciente pode confirmar os dados que ele tem no sistema, sendo que ele é direcionado ao psicologo. Dado o trecho - Um dos pilares da LGPD é o consentimento informado. O paciente deve saber: Quais dados estão sendo coletado, Para que finalidade eles serão usados, Por quanto tempo ficarão armazenados. - e como o cliente deveria poder solicitar a exclusao desses dados?
+
