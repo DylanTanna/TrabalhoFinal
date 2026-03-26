@@ -61,9 +61,9 @@ RF14 - O sistema deve realizar o backup automático de documentos e dados armaze
 
 RF15 - O sistema deve permitir a recuperação de dados a partir de cópias de segurança em caso de perda ou falha.
 
-RF16 -
+RF16 - O sistema deve permitir a realização de atendimentos remotos (consultas online) por vídeo, áudio ou chat, com agendamento, confirmação ao paciente e registro da sessão no prontuário.
 
-RF17 -
+RF17 - O sistema deve possibilitar comunicação segura entre profissional e paciente, incluindo envio e armazenamento de documentos digitais, com criptografia e medidas de proteção em conformidade com a LGPD.
 
 RF18 -
 
