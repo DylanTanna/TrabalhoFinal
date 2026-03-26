@@ -65,25 +65,25 @@ RF16 - O sistema deve permitir a realização de atendimentos remotos (consultas
 
 RF17 - O sistema deve possibilitar comunicação segura entre profissional e paciente, incluindo envio e armazenamento de documentos digitais, com criptografia e medidas de proteção em conformidade com a LGPD.
 
-RF18 -
+RF18 - O sistema deve permitir que cada profissional configure disponibilidade específica para atendimentos remotos, incluindo tipos de sessão (vídeo/áudio/chat) e horários de atendimento.
 
-RF19 -
+RF19 - O sistema deve oferecer sala de espera virtual e funcionalidades para gerenciamento de chamadas (entrada/saída, tempo de espera, priorização) durante atendimentos remotos.
 
-RF20 -
+RF20 - O sistema deve registrar início, término e duração de cada consulta online e disponibilizar esses registros ao profissional no prontuário.
 
-RF21 -
+RF21 - O sistema deve permitir gravação de sessões online mediante consentimento do paciente, armazenando as gravações de forma criptografada quando ativadas.
 
-RF22 -
+RF22 - O sistema deve permitir troca de mensagens assíncronas entre profissional e paciente com histórico persistente vinculado ao prontuário.
 
-RF23 -
+RF23 - O sistema deve enviar notificações em tempo real (push/e-mail/SMS) para novas mensagens, alterações de agendamento e comunicados importantes.
 
-RF24 -
+RF24 - O sistema deve permitir upload e download de documentos por pacientes e profissionais, associando metadados (tipo, data, autor) ao prontuário.
 
-RF25 -
+RF25 - O sistema deve validar formatos e tamanhos de arquivos aceitos e oferecer possibilidade de assinatura eletrônica simples para documentos quando aplicável.
 
-RF26 -
+RF26 - O sistema deve manter logs de acesso e de ações relevantes (upload, download, acesso a prontuário) para auditoria, com retenção configurável.
 
-RF27 -
+RF27 - O sistema deve suportar processos de exclusão, portabilidade e anonimização de dados pessoais conforme solicitações do titular, em conformidade com a LGPD.
 
 RF28 -
 
