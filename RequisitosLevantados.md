@@ -53,13 +53,13 @@ RF10 - O sistema deve associar as respostas dos questionários ao prontuário do
 
 RF11 - O sistema deve permitir que o psicólogo visualize as respostas dos questionários antes do atendimento.
 
-RF12 -
+RF12 - O sistema deve fazer a leitura de documentos em formato digital.
 
-RF13 -
+RF13 - O sistema deve permitir o envio e o armazenamento de documentos digitais.
 
-RF14 -
+RF14 - O sistema deve realizar o backup automático de documentos e dados armazenados.
 
-RF15 -
+RF15 - O sistema deve permitir a recuperação de dados a partir de cópias de segurança em caso de perda ou falha.
 
 RF16 -
 
