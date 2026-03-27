@@ -85,15 +85,17 @@ RF26 - O sistema deve manter logs de acesso e de ações relevantes (upload, dow
 
 RF27 - O sistema deve suportar processos de exclusão, portabilidade e anonimização de dados pessoais conforme solicitações do titular, em conformidade com a LGPD.
 
-RF28 -
+RF28 - O sistema deve permitir que pacientes informem sintomas e receber uma classificação inicial de risco/prioridade por meio de IA.
 
-RF29 -
+RF29 - O sistema deve permitir a criação, edição e consulta de prontuários eletrônicos dos pacientes.
 
-RF30 -
+RF30 - O sistema deve armazenar todo o histórico médico do paciente, incluindo consultas, exames, diagnósticos e tratamentos.
 
+RF31 - O sistema deve enviar automaticamente confirmações e lembretes de consultas via SMS, e-mail ou aplicativo.
+
+RN32 - O sistema deve sugerir preenchimentos automáticos (como sintomas, CID, medicamentos) para auxiliar profissionais de saúde durante o registro.
 
 ### Requisitos Não Funcionais
-
 
 RNF01 - O sistema deve garantir a confidencialidade dos dados dos usuários.
 
@@ -113,15 +115,15 @@ RNF08 - O sistema deve implementar controle de acesso baseado em níveis de perm
 
 RNF09 - O sistema deve restringir o acesso a prontuários apenas a usuários autorizados.
 
-RNF10 -
+RNF10 - O sistema deve garantir a proteção dos dados dos pacientes conforme a LGPD, com criptografia e controle de acesso.
 
-RNF11 -
+RNF11 - O sistema deve estar disponível 24 horas por dia, com alta disponibilidade (ex: 99,9% de uptime).
 
-RNF12 -
+RNF12 - O sistema deve processar consultas e acessos ao prontuário em até 2 segundos, mesmo com múltiplos usuários simultâneos.
 
-RNF13 -
+RNF13 - O sistema deve suportar crescimento no número de usuários e dados sem perda de desempenho.
 
-RNF14 -
+RNF14 - O sistema deve possuir interface simples e intuitiva, permitindo fácil uso por profissionais de saúde e pacientes.
 
 RNF15 -
 
