@@ -27,26 +27,31 @@ O sistema deve permitir:
 -Acesso a agenda dos profissionais (restrito ou 100% transparente?)
 -Disponibilidade de agendamento 24 horas \\diferente de ter atendimentos 24 horas
 -Confirmação de consultas por E-mail
+
 -Inteligencia Artificial para triagem
 -Auxilio na criação de prontuários
 -Automatização de tarefas simples, como confirmação de consultas
 -Prontuário Eletrônico (PEP) \\estudar mais sobre
 -Armazenamento do histórico do paciente (por quanto tempo? como fazer de forma segura?)
+
 -Organização dos dados clínicos
 -Registro das transações no sistema
 -Redução de faltas (No-show - como usar o whatsapp para isso?)
 -Envio de lembretes de consultas
 -Confirmação automática, por exemplo via WhatsApp
+
 -Atendimento remoto
 -Realização de consultas online
 -Comunicação entre profissional e paciente
 -Envio de documentos
 -Segurança e LGPD
+
 -Proteção dos dados dos usuários
 -Uso de criptografia
 -Controle de acesso
 -Pré-atendimento \\como fazer? IA?
 -Questionários para coleta de informações antes da consulta
+
 -Documentos digitais
 -Envio e armazenamento de documentos
 -Backup de dados
