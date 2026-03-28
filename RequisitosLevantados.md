@@ -1,160 +1,132 @@
-# Requisitos Levantados
+---
 
-## Como atualizar o arquivo
-
-Antes de sair editando, você precisa garantir que está com a versão mais atual do arquivo.
-Se não fizer isso, pode sobrescrever o que outra pessoa já fez.
-
-### Passo a passo com Git
-
-1. Abra o terminal na pasta do projeto
-2. Puxe as alterações mais recentes:
-
-   git pull origin main
-3. Faça suas alterações no arquivo `RequisitosLevantados.md`
-4. Salve o arquivo
-5. Envie suas alterações:
-
-   git add .
-   git commit -m "Adicionando requisitos - [nome da funcionalidade]"
-   git push origin main
+# Requisitos do Sistema
 
 ---
 
-### Padrão obrigatório
+## Requisitos Funcionais (RF)
 
-* Começar com código (RF01, RF02...) para requisitos funcionais e código (RNF01, RNF02...) para requisitos não funcionais
-* Sempre iniciar com: **"O sistema deve..."**
-* Ser claro e direto
+### 1. Gestão de Pacientes
+
+RF01 - O sistema deve permitir o cadastro de pacientes.
+RF02 - O sistema deve permitir a visualização, edição e exclusão de dados dos pacientes.
+RF03 - O sistema deve permitir o registro de informações iniciais do paciente antes da consulta.
+RF04 - O sistema deve disponibilizar formulário de pré-atendimento para preenchimento online.
+RF05 - O sistema deve armazenar os dados do pré-atendimento para consulta posterior pelo profissional.
 
 ---
 
-### Requisitos Funcionais
+### 2. Agenda e Consultas
 
-RF01 - O sistema deve permitir o agendamento de consultas.
+RF06 - O sistema deve permitir o agendamento de consultas.
+RF07 - O sistema deve permitir o acesso à agenda dos profissionais conforme nível de permissão.
+RF08 - O sistema deve permitir agendamentos 24 horas por dia, independentemente do horário de atendimento.
+RF09 - O sistema deve permitir que profissionais configurem seus horários de atendimento.
 
-RF02 - O sistema deve permitir o acesso à agenda dos profissionais, podendo ser restrito ou totalmente transparente conforme configuração.
+---
 
-RF03 - O sistema deve permitir o agendamento de consultas 24 horas por dia, independentemente do horário de atendimento.
+### 3. Notificações e Comunicação
 
-RF04 - O sistema deve enviar confirmação de consultas por e-mail.
+RF10 - O sistema deve enviar confirmações de consultas por e-mail.
+RF11 - O sistema deve enviar lembretes automáticos de consultas.
+RF12 - O sistema deve permitir confirmação automática de consultas.
+RF13 - O sistema deve permitir comunicação entre paciente e profissional.
+RF14 - O sistema deve enviar notificações em tempo real sobre mensagens e alterações de agendamento.
 
-RF05 - O sistema deve permitir o registro de informações iniciais do paciente antes da consulta.
+---
 
-RF06 - O sistema deve disponibilizar formulário de pré-atendimento para preenchimento online.
+### 4. Prontuário e Dados Clínicos
 
-RF07 - O sistema deve armazenar os dados do pré-atendimento para consulta posterior pelo psicólogo.
+RF15 - O sistema deve permitir a criação, edição e consulta de prontuários eletrônicos.
+RF16 - O sistema deve armazenar o histórico clínico do paciente.
+RF17 - O sistema deve associar questionários e respostas ao prontuário do paciente.
+RF18 - O sistema deve permitir que o profissional visualize informações antes da consulta.
 
-RF08 - O sistema deve permitir a criação de questionários personalizados pelo psicólogo.
+---
 
-RF09 - O sistema deve permitir que pacientes respondam questionários antes da consulta.
+### 5. Questionários e Avaliação
 
-RF10 - O sistema deve associar as respostas dos questionários ao prontuário do paciente.
+RF19 - O sistema deve permitir a criação de questionários personalizados.
+RF20 - O sistema deve permitir que pacientes respondam questionários antes da consulta.
 
-RF11 - O sistema deve permitir que o psicólogo visualize as respostas dos questionários antes do atendimento.
+---
 
-RF12 - O sistema deve fazer a leitura de documentos em formato digital.
+### 6. Documentos
 
-RF13 - O sistema deve permitir o envio e o armazenamento de documentos digitais.
+RF21 - O sistema deve permitir envio e armazenamento de documentos digitais.
+RF22 - O sistema deve permitir upload e download de documentos com registro de metadados.
+RF23 - O sistema deve validar formatos e tamanhos de arquivos.
 
-RF14 - O sistema deve realizar o backup automático de documentos e dados armazenados.
+---
 
-RF15 - O sistema deve permitir a recuperação de dados a partir de cópias de segurança em caso de perda ou falha.
+### 7. Atendimentos Online
 
-RF16 - O sistema deve permitir a realização de atendimentos remotos (consultas online) por vídeo, áudio ou chat, com agendamento, confirmação ao paciente e registro da sessão no prontuário.
+RF24 - O sistema deve permitir atendimentos remotos por vídeo, áudio ou chat.
+RF25 - O sistema deve permitir configuração de disponibilidade para atendimentos online.
+RF26 - O sistema deve disponibilizar sala de espera virtual.
+RF27 - O sistema deve registrar dados das consultas online (início, fim e duração).
+RF28 - O sistema deve permitir troca de mensagens assíncronas com histórico.
 
-RF17 - O sistema deve possibilitar comunicação segura entre profissional e paciente, incluindo envio e armazenamento de documentos digitais, com criptografia e medidas de proteção em conformidade com a LGPD.
+---
 
-RF18 - O sistema deve permitir que cada profissional configure disponibilidade específica para atendimentos remotos, incluindo tipos de sessão (vídeo/áudio/chat) e horários de atendimento.
+### 8. Segurança e LGPD
 
-RF19 - O sistema deve oferecer sala de espera virtual e funcionalidades para gerenciamento de chamadas (entrada/saída, tempo de espera, priorização) durante atendimentos remotos.
+RF29 - O sistema deve permitir exclusão, anonimização e portabilidade de dados pessoais.
+RF30 - O sistema deve manter logs de acesso e ações para auditoria.
 
-RF20 - O sistema deve registrar início, término e duração de cada consulta online e disponibilizar esses registros ao profissional no prontuário.
+---
 
-RF21 - O sistema deve permitir gravação de sessões online mediante consentimento do paciente, armazenando as gravações de forma criptografada quando ativadas.
+### 9. Financeiro
 
-RF22 - O sistema deve permitir troca de mensagens assíncronas entre profissional e paciente com histórico persistente vinculado ao prontuário.
+RF31 - O sistema deve registrar transações financeiras relacionadas a consultas.
 
-RF23 - O sistema deve enviar notificações em tempo real (push/e-mail/SMS) para novas mensagens, alterações de agendamento e comunicados importantes.
+---
 
-RF24 - O sistema deve permitir upload e download de documentos por pacientes e profissionais, associando metadados (tipo, data, autor) ao prontuário.
+### 10. Funcionalidades Inteligentes
 
-RF25 - O sistema deve validar formatos e tamanhos de arquivos aceitos e oferecer possibilidade de assinatura eletrônica simples para documentos quando aplicável.
+RF32 - O sistema deve sugerir preenchimentos automáticos para auxiliar profissionais.
+RF33 - O sistema deve permitir classificação inicial de risco com base em dados informados.
 
-RF26 - O sistema deve manter logs de acesso e de ações relevantes (upload, download, acesso a prontuário) para auditoria, com retenção configurável.
+---
 
-RF27 - O sistema deve suportar processos de exclusão, portabilidade e anonimização de dados pessoais conforme solicitações do titular, em conformidade com a LGPD.
+## Requisitos Não Funcionais (RNF)
 
-RF28 - O sistema deve permitir que pacientes informem sintomas e receber uma classificação inicial de risco/prioridade por meio de IA.
+### 1. Segurança
 
-RF29 - O sistema deve permitir a criação, edição e consulta de prontuários eletrônicos dos pacientes.
+RNF01 - O sistema deve garantir a confidencialidade dos dados.
+RNF02 - O sistema deve impedir acessos não autorizados.
+RNF03 - O sistema deve armazenar dados sensíveis conforme a LGPD.
+RNF04 - O sistema deve criptografar senhas.
+RNF05 - O sistema deve utilizar criptografia em dados sensíveis.
+RNF06 - O sistema deve utilizar HTTPS para comunicação.
 
-RF30 - O sistema deve armazenar todo o histórico médico do paciente, incluindo consultas, exames, diagnósticos e tratamentos.
+---
 
-RF31 - O sistema deve enviar automaticamente confirmações e lembretes de consultas via SMS, e-mail ou aplicativo.
+### 2. Controle de Acesso
 
-RN32 - O sistema deve sugerir preenchimentos automáticos (como sintomas, CID, medicamentos) para auxiliar profissionais de saúde durante o registro.
+RNF07 - O sistema deve possuir autenticação por login e senha.
+RNF08 - O sistema deve implementar níveis de permissão.
+RNF09 - O sistema deve restringir acesso a prontuários.
 
-### Requisitos Não Funcionais
+---
 
-RNF01 - O sistema deve garantir a confidencialidade dos dados dos usuários.
+### 3. Desempenho e Escalabilidade
 
-RNF02 - O sistema deve impedir o acesso não autorizado aos dados dos usuários.
+RNF10 - O sistema deve estar disponível 24/7.
+RNF11 - O sistema deve responder requisições em até 2 segundos.
+RNF12 - O sistema deve suportar múltiplos usuários simultâneos.
+RNF13 - O sistema deve suportar crescimento sem perda de desempenho.
 
-RNF03 - O sistema deve armazenar dados sensíveis de forma segura, em conformidade com a LGPD.
+---
 
-RNF04 - O sistema deve criptografar as senhas dos usuários.
+### 4. Usabilidade
 
-RNF05 - O sistema deve utilizar criptografia para armazenamento de dados sensíveis.
+RNF14 - O sistema deve possuir interface simples e intuitiva.
 
-RNF06 - O sistema deve utilizar protocolo seguro (HTTPS) para comunicação de dados.
+---
 
-RNF07 - O sistema deve permitir autenticação de usuários por meio de login e senha.
+### 5. Integração
 
-RNF08 - O sistema deve implementar controle de acesso baseado em níveis de permissão (ex: administrador, psicólogo e paciente).
-
-RNF09 - O sistema deve restringir o acesso a prontuários apenas a usuários autorizados.
-
-RNF10 - O sistema deve garantir a proteção dos dados dos pacientes conforme a LGPD, com criptografia e controle de acesso.
-
-RNF11 - O sistema deve estar disponível 24 horas por dia, com alta disponibilidade (ex: 99,9% de uptime).
-
-RNF12 - O sistema deve processar consultas e acessos ao prontuário em até 2 segundos, mesmo com múltiplos usuários simultâneos.
-
-RNF13 - O sistema deve suportar crescimento no número de usuários e dados sem perda de desempenho.
-
-RNF14 - O sistema deve possuir interface simples e intuitiva, permitindo fácil uso por profissionais de saúde e pacientes.
-
-RNF15 -
-
-RNF16 -
-
-RNF17 -
-
-RNF18 -
-
-RNF19 -
-
-RNF20 -
-
-RNF21 -
-
-RNF22 -
-
-RNF23 -
-
-RNF24 -
-
-RNF25 -
-
-RNF26 -
-
-RNF27 -
-
-RNF28 -
-
-RNF29 -
-
-RNF30 -
+RNF15 - O sistema deve permitir integração com serviços externos (ex: WhatsApp).
 
 ---
