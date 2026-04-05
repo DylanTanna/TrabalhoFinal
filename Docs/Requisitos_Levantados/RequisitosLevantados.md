@@ -1,4 +1,4 @@
-# 📌 Requisitos do Sistema Clínico
+# Requisitos do Sistema Clínico
 
 ---
 
