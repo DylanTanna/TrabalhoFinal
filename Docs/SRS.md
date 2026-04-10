@@ -112,3 +112,4 @@ Português
 -   Falhas externas
 
 ---
+.
