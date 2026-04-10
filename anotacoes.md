@@ -39,7 +39,7 @@ Definimos que é necessário refazer o questionário para poder ter um entendime
 - Quais documentações são geradas ao longo de um tratamento com paciente?
 - Quais orgãos regulamentam o processo de psicologia?
 ~~~
->Imagens estão anexadas na pasta 09_04_Quadro\
+>Imagens estão anexadas na pasta 09_04_Quadro/
 
 Esses questionamentos serão reprocessados e esperamos ter um questionário até sabado (em 2 dias), para isso irei criar uma branch somente de questionário e nela vamos anexar as evoluções das perguntas e respostas.
 Após isso planejamos distribuir e receber respostas ao longo da semana do dia 13 a 17, aproveitando o periodo de provas para não estar tão focado, a assim que respondidas fazer a reanálise de requisitos em conjunto. 
