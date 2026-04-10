@@ -11,8 +11,8 @@
 ## Instruções de uso
 
 1. Use o link de edição apenas para ajustar perguntas e configurações; não compartilhe o link de edição publicamente.
-2. Para coletar respostas, distribua o link de respostas ou o QR code (se houver).
-3. Mantenha um backup das respostas em `Formulário_v2_excel.xlsx` (se aplicável).
+2. Para coletar respostas, distribua o link de respostas ou o QR code.
+3. Backup das respostas em `Formulário_v2_excel.xlsx`.
 
 ---
 
