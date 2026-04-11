@@ -43,3 +43,12 @@ Definimos que é necessário refazer o questionário para poder ter um entendime
 
 Esses questionamentos serão reprocessados e esperamos ter um questionário até sabado (em 2 dias), para isso irei criar uma branch somente de questionário e nela vamos anexar as evoluções das perguntas e respostas.
 Após isso planejamos distribuir e receber respostas ao longo da semana do dia 13 a 17, aproveitando o periodo de provas para não estar tão focado, a assim que respondidas fazer a reanálise de requisitos em conjunto. 
+
+---
+## 10/04
+No dia de hoje, trabalhamos pelo whatsapp para poder desenvolver o questionario, foram levantadas perguntas baseado no nosso entendimento di sistema, em ensinamentos de aulas no youtube e baseado nas perguntas levatandas na reuniao de obtem. 
+a criação do arquivo teve participacão majoritario do Matheus e o desenvolvimento das perguntas ficaram por conta do Dylan e Guilherme, com validações realizadas pela myllena.
+
+>Toda a documentação foi anexada na pasta questionrio_versoes/segunda_versão
+
+proxima etapa (para até quarta), sera a diatribuicao dos questionairos para coleta de informação 
