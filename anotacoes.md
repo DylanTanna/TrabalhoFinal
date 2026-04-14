@@ -66,4 +66,31 @@ proxima etapa (para até quarta), sera a diatribuicao dos questionairos para col
 
 Hoje foi um dia parado para o projeto, sendo apenas evoluido com a resposta de um psicologo ao questionario, e eu (dylan) comecei a estudar sobre BPMN e gerei o primeiro modelo, que será melhorado:
 
-![1776045646657](image/anotacoes/1776045646657.png)
+<img width="1430" height="532" alt="image" src="https://github.com/user-attachments/assets/c829466a-1295-4a34-991d-ea91c34c5617" />
+
+---
+
+## 13/04
+
+Hoje foram feitas algumas atualizações no projeto. Quanto o BPMN, a Myllena assinou a task de atualizar e estudar como gerar um, foi feito e anexado na branch main, por mais que sabemos que ele deverá ser alterado, por que os requisitos estão incompletos, foi gerado e será melhorado no futuro próximo.
+
+recebemos uma resposta do psicologo Jhoel Fernandes e alguns pontos foram analisados e marcados por mim, com o objetivo de levar a discução em uma proxima reunião com os membros do projeto:
+- O psicologo espera uma triagem inicial: entender melhor como podemos oferecer isso em nosso sistema
+- Registro documental de pós sessão: seria algo que nosso sistema pode gerar, ou apenas armazenar?
+- "Geração simplificada de lautos, pareceres e relatórios": pesquisar o que cada um desses termos se refere na psicologia
+- tempo médio de duração de uma sessão é de 50 minutos: para o caso desse doutor, é o tempo máximo.
+- No primeiro momento, não se espera uma documentação que deve estar armazenada no sistema
+- nosso sistema deve gerar o recibo de imposto de renda?
+- Existe um valor teto por sessão, mas não é um padrão, as consultas sociais fazem parte de todo o processo e tem valores bem distintos
+- Psicologo espera do sistema uma organização de documentação, para melhorar a produtividade
+- Definir documentações que são acessiveis para o paciente e deixar de alguma forma acessivel: pelo site ou telegram?
+- Remarcar só com + de 24 horas de antecedencia
+- funcionalidade consederada uma avanço para ele: Calendário colaborativo.
+  > me inspiro em calendários de marcar consulta em hospitais particulares com atualização em tempo real e uma lista de remarcar (ainda preciso discutir isso com o grupo)
+  > <img width="1100" height="620" alt="image" src="https://github.com/user-attachments/assets/70093da1-ae4e-4c28-92e2-b0b6881b27bb" />
+- Processo da primeira consulta é frustrante, pois os pacientes só "estão curiosos, então agendam e não comparecem"
+- Documentação gerada: Prontuarios / Anotações clinicas / Recibo da receita federal / declaraão de comparecimento
+- outros documentos que vem da resolução 31/2022 que podem ser considerado
+
+Estou (Dylan) também fazendo a leitura de 3 documentos importantes para o projeto: CFP 001/2009 - Codigo de ética do psicologo (CFP 2005) - LGPD (art 5, 6, 7, 11, 18, 46)
+
