@@ -66,4 +66,4 @@ proxima etapa (para até quarta), sera a diatribuicao dos questionairos para col
 
 Hoje foi um dia parado para o projeto, sendo apenas evoluido com a resposta de um psicologo ao questionario, e eu (dylan) comecei a estudar sobre BPMN e gerei o primeiro modelo, que será melhorado:
 
-![1777148296447](image/anotacoes/1777148296447.png)
+![1777156472796](image/anotacoes/1777156472796.png)
