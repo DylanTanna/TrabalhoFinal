@@ -66,4 +66,32 @@ proxima etapa (para até quarta), sera a diatribuicao dos questionairos para col
 
 Hoje foi um dia parado para o projeto, sendo apenas evoluido com a resposta de um psicologo ao questionario, e eu (dylan) comecei a estudar sobre BPMN e gerei o primeiro modelo, que será melhorado:
 
-![1777156472796](image/anotacoes/1777156472796.png)
+![1777346032311](image/anotacoes/1777346032311.png)
+
+## 27/04
+
+Hoje voltamos a trabalhar no projeto e eu (Dylan) fiz um levantamento de requisitos baseado no sistemana análogo, sendo essa a segunda versão. Foi levantando as principais funcionalidades e armazenada no caminho:
+
+*Branch main - Docs/input/Analogo/segunda_versao_analogo/analise_de_requisitos_analogo.md*
+
+Foi apenas um levantamento de funcionalidades, irei ainda hoje transformar em frases de funcionalidades para depois transformar em requisitos de fato.
+
+----------
+
+Elaborei também um calendario até a entrega da segunda etapa, para que dê tempo de fazer tudo e revisar
+
+~~~
+Até 29/04 -> Dylan irá fazer uma reanalise do sistema analogo e dos questionarios e fazer um levantamento de requisitos;
+
+29/04 -> no primeiro horário a equipe irá fazer uma reuniao para discutir os requisitos levantados e os fluxos do sistema, alem de separar os requisitos para que sejam escritos de forma formal (segundo as ultimas atividades e o livro do larman);
+
+Até 04/05 -> fazer a escrita formal dos requisitos, que estará separado em partes iguais entre os integrantes do grupo;
+
+06/05 -> junção dos requisitos, validação de conformidade e divisão de responsabilidades para a tarefa de criar diagramas da entrega II;
+
+Até 09/05 -> cada um desenvolver seus proprios diagramas designados;
+
+10/05 -> Essa etapa está destinada a juntar tudo em um documento e o Antonio gera a ABNT do documento e a gente faz uma validação final;
+
+13/05 -> entrega
+~~~
