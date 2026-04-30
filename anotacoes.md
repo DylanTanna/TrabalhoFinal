@@ -95,3 +95,18 @@ Até 09/05 -> cada um desenvolver seus proprios diagramas designados;
 
 13/05 -> entrega
 ~~~
+
+## 29/04
+
+na data de hoje houve bons avanços no projeto. Eu (Dylan) elabolei o documento de requisitos em sua versão inicial e fizemos a reunião de análise, pontos foram levantados, incluindo a superficialidade do documento e os pontos que devem ser alterados, esperamos amanhã continuar discutindo sobre para melhorar ainda mais o projeto.
+
+Pontos a se desenvolver:
+- Requisitos relacionados a documentação anexada pelo psicologo
+- Requisitos quye diz respeito a parte financeira
+- Requisitos relacionados a todas as interaqções do paciente
+- Requisitos sobre a hierarquia de acessos e seus cadastros
+- outros
+
+*Branch main - Docs/Requisitos_Rastreabilidade/Requisitos/segunda_versao_requisitos/Requisitos_V0.1.pdf*
+
+integrantes da reunião: Dylan, Myllena, Antônio, Guilher e Eduardo. 
