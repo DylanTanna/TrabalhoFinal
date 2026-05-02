@@ -110,3 +110,17 @@ Pontos a se desenvolver:
 *Branch main - Docs/Requisitos_Rastreabilidade/Requisitos/segunda_versao_requisitos/Requisitos_V0.1.pdf*
 
 integrantes da reunião: Dylan, Myllena, Antônio, Guilher e Eduardo. 
+
+## 30/04
+
+Na quinta feira pós prova, fizemos apenas alguns avanços no documento de requistos e definimos um outro caminho para fazer a elicitação. Cada integrante (exceto Matheus) pegou um tópico que que estava ainda superficial na V0.1, e com isso definimos um tipo de documento para descrever como seria o fluxo que queremos, assim no domingo (03/05) queremos fazer uma reuniao online para todos lerem e assim definir se o fluxo está certo, e ai sim melhorarmos os requistos com um embasamento do processo real:
+
+| Tópico | Responsável |
+|:--------:| --------:|
+| Financeiro   | Dylan    |
+| Doc. gerada   | Guilherme    |
+| Cadastro   | Myllena    |
+| Calendário   | Antônio    |
+| Armazenamento de info.   | Eduardo    |
+
+ Esperado para a próxima interação: Até sabado 02/05 os iuntegrantes devem gerar a documentação para no domingo tratarmos. 
