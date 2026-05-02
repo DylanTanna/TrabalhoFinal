@@ -7,7 +7,4 @@ Glossário:
 
 
 Fluxos:
-https://docs.google.com/document/d/1Jtp6cXNgZwEc8oXPN8xvahS7-BNFLCD-5w2U1g2aTfw/edit?usp=sharing
-
-Fluxo do calendário (atendimento e psicologo)
-https://docs.google.com/document/d/1rRDXquwthfBFKhMf_4veqLTFEh8MyzS697xLMT0CkyU/edit?usp=sharing
+[https://docs.google.com/document/d/1Jtp6cXNgZwEc8oXPN8xvahS7-BNFLCD-5w2U1g2aTfw/edit?usp=sharing](https://docs.google.com/document/d/1_M3KsuwGRH5mrImaIeT5gaKmbNGYt4KNntu9hK8bFXE/edit?usp=sharing)
