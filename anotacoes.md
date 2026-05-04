@@ -124,3 +124,12 @@ Na quinta feira pós prova, fizemos apenas alguns avanços no documento de requi
 | Armazenamento de info.   | Eduardo    |
 
  Esperado para a próxima interação: Até sabado 02/05 os iuntegrantes devem gerar a documentação para no domingo tratarmos. 
+
+## 03/05
+
+Alguns planos do final de semana foram frustrados. A reunião que haviamos marcado para hoje não ocorreu por alguns imprevistos com 3 colegas (Myllena, Antônio e Guilherme), mas isso acontece, e decidimos fazer uma análise dos levantamentos amanhã antes/durante a aula. Cada um fez a sua parte, porem Myllena e Guilherme não conseguiram anexar no documento final, então ao final do dia 03 a versão deles não está no documento. 
+Como esperado, o integrante Matheus não participou de nenhuma atividade ou mesmo análise de artefatos que iamos mandando para validação de todos no grupo do whatsapp. 
+<br>
+Visando não atrasar muito nossa entrega, busquei (dylan) atualizar nossa documentação de forma a já fazer os entregaveis do tipo "glossário" da maneira que se espera na entrega. Já fiz também os documentos de Value Proposition e Documento visão, foram anexados na main na data de 03/05 e 04/05 na pasta \docs\3.Docs_negocio\
+<br><br>
+Plano Futuro: Para amanhã desejo revisar todo o fluxo de fato, para durante a noite eu fazer o levantamento apurado e atualizado de requisitos, garantindo que todos os integrantes vão visualizar o projeto da mesma forma, funcionalidades e restrições. após isso vou dividir os casos de uso para que todos façam pelo menos 2 ou 3, e após isso dividir o restante dos entegaveis para que o grupo faça (como documento suplementar, telas, entidade relacionamento...)
