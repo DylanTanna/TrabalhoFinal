@@ -133,3 +133,47 @@ Como esperado, o integrante Matheus não participou de nenhuma atividade ou mesm
 Visando não atrasar muito nossa entrega, busquei (dylan) atualizar nossa documentação de forma a já fazer os entregaveis do tipo "glossário" da maneira que se espera na entrega. Já fiz também os documentos de Value Proposition e Documento visão, foram anexados na main na data de 03/05 e 04/05 na pasta \docs\3.Docs_negocio\
 <br><br>
 Plano Futuro: Para amanhã desejo revisar todo o fluxo de fato, para durante a noite eu fazer o levantamento apurado e atualizado de requisitos, garantindo que todos os integrantes vão visualizar o projeto da mesma forma, funcionalidades e restrições. após isso vou dividir os casos de uso para que todos façam pelo menos 2 ou 3, e após isso dividir o restante dos entegaveis para que o grupo faça (como documento suplementar, telas, entidade relacionamento...)
+
+## 04/05
+
+*Observação antes do relatório: O integrante Matheus Pains saiu do grupo nesta segunda feira, após deversas semanas sem agregar ao projeto ou mesmo demonstrar interesse em se recolocar.*
+<br>
+Na data de hoje a professora não pode ministrar a aula, e por isso alguns artefatos que queria validar com ela ficaram em suspenso até a aula de 06/05; aproveitando o tempo, a equipe decidiu se reunir para discutir sobre os fluxos atuais: 
+~~~
+Integrantes:
+Myllena
+Dylan
+Antônio
+Eduardo
+~~~
+
+O fluxo, como acredito já ter falado, se trata da nossa interpretação de como o sistema deve se comportar, ele mistura tudo: Requistos funcionais, não funcionais, regras de negócio e tudo o que tem direito. O nosso objetivo é alinhar 100% do funcionamento para apartir deste ponto fazer um lavantamento suficientemente completo. No momento atual, a versão do documento de fluxo é a V0.5, Commitada pelo Matheus - A Integração dele foi gerada por IA e iremos validar com um pouco mais de cuidado, garantindo coesão e acoplamento com o restante do projeto.
+Quanto a essa versão que geramos, algumas alterações foram analizadas durante a reunião:
+- Metodo de pagamento pos-pago define inadimplencia quando uma consulta está pendente e uma segunda consulta é realizada. Ex: A consulta de 03/05 está pendente, so me torno inadimplete quando eu realizar uma segunda consulta SEM pagar a em aberto.<br>
+- Nas telas previas geradas no figma, o extrato financeiro possui algumas abas de saldo: <br>
+| Valor acordado | Valor Pago | Saldo Final | <Br>
+Validamos a necessidade de que o saldo final apresente o "-" antes do valor, possibilitando o saldo ser "R$0,00" onde não há valores pendentes, ou negativo, que significa valores em aberto
+- Ao psicologo entrar em um horário de consulta, no sistema ele terá um botão de "iniciar consulta", que exibirá para ele o modo de atendimento (inpirado no CodeSpace do Github) que seria um ambiente gerado para facilitar o acesso do psicologo aos dados do paciente, que ele poderá gerar anotações que serão vinculadas diretamente ao paciente, por que o modo de atendimento depende de uma consulta, que é vinculada diretamente no ID do paciente. <br>
+O modo atendimento conta o tempo definido pelo psicologo como o padrão de consulta (ele precisa definir isso no seu cadastro pessoal) e assimm que acabar a consulta, o psicologo pode finalizar e o status passa a ser "Finalizando documentação", o objetivo é que o psicologo entenda que o tempo acabou, mas que ainda possa realizar suas atualizações documentais e anotações, para então sair do modo qunado quiser <Br>
+
+```text
+[Iniciar consulta]
+      |
+      v
+[Modo atendimento]
+      |
+      v
+[Registrar anotações]
+      |
+      v
+[Tempo expirou] -> Logs de finalização de consulta com paciente são gerados
+      |
+      v
+[Finalizando documentação]
+      |
+      v
+[Encerramento manual] -> Todas as documentações são salvas
+```
+
+- Link de remarcar consulta expecifico para o paciente: A ideia (inspirado em sistam de remarcar de barbearia) consiste em quando uma consulta for realizada, o psicologo poder remarcar a consulta manualmente ao final, mas se não for feito, o psicologo pode enviar um link para o paciente para remarcar <br>
+Diferencial: O Link vai ser gerado PARA o cadastro do usuário, assim, ao acessar o link (que expira em 1 hora, ou torna invalido após realizar uma reserva) o paciente possa marcar a proxima consulta sem precisar de fazer loggin ou acessos, e o link deve mostrar a agenda (apenas) do doutor e permitir que o paciente escolha quando se encaixar.
