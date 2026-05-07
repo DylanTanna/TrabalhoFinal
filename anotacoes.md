@@ -177,3 +177,28 @@ O modo atendimento conta o tempo definido pelo psicologo como o padrão de consu
 
 - Link de remarcar consulta expecifico para o paciente: A ideia (inspirado em sistam de remarcar de barbearia) consiste em quando uma consulta for realizada, o psicologo poder remarcar a consulta manualmente ao final, mas se não for feito, o psicologo pode enviar um link para o paciente para remarcar <br>
 Diferencial: O Link vai ser gerado PARA o cadastro do usuário, assim, ao acessar o link (que expira em 1 hora, ou torna invalido após realizar uma reserva) o paciente possa marcar a proxima consulta sem precisar de fazer loggin ou acessos, e o link deve mostrar a agenda (apenas) do doutor e permitir que o paciente escolha quando se encaixar.
+
+## 06/05
+
+Hoje, quarta feira, a professora não conseguiu estar presente para mistriar a aula por que estava internada, aproveitamos essa oportunidade para mais uma vez dar um passo atras no projeto, mas dessa vez de forma *RAPIDA*. O estado em que deixamos o projeot ontem era: <Br>
+definimos algumas restriçoes e casos de uso, uma nova modalidade de cadastrar uma consulta.
+<Br>
+Mas o que de fato está sendo o problema que vejo, todo o levantamento de requisitos está sendo feito de uma forma muito superficial, ou toda vez que fazemos uma reuniao as coisas são redefinidas. pensando nisso decidimos abstrair, definir uma pequena lista de desejos de casa perfil:
+
+![1778115661438](image/anotacoes/1778115661438.png)
+
+Isso nos ajudou a entender melhor as funcionalidades e pensando em não fazer essa repetição de mesmas funções, desenvolvi (Dylan) uma matriz desses desejos, já dando uma reformulada nos nomes e deixando menos abstraidos
+
+![1778115794484](image/anotacoes/1778115794484.png)
+
+A ideia é definir os desejos e quem pode querer a mesma coisa. Ficou bom (sem muita humildade nessa fala), mas em grupo definimos um problem, o que de fato é o ADM? uma entidade, um usuário? um nivel de credenciamento? <Br>
+A resposta definida em grupo foi: *RBAC* - o modelo nos ajudou a definir os "papeis" que os usuários podem ter e até mesmo algumas regras de negócio.<Br>
+Em uma de nossas pesquisas achamos uma inspiração
+![1778115988659](image/anotacoes/1778115988659.png)
+E junto dessa inspiração pensei no meu sistema de trabalho *SAPO.Frogpay* que só mostra botoes funcionais, dessa forma desenvolvemos o que seria o papel de adminitrador, ele pode conceder os acessos e limiações, aprovar cadastros e tudo mais, ao mesmo que não deixa de ser um psicologo ou um gerente. Dessa forma atualizamos a matriz de desejo para comportar essa nossa escolha, fortalecendo ainda mais a base do nosso projeto:
+![1778116217452](image/anotacoes/1778116217452.png)
+
+Importante anotar as seguintes ideias:
+* Para cadastrar um novo funcionario, algum dos ADM permitidos deve gerar um link de cadastro, para que o novo funcionario acesse e anexe a documentação, e depois de feito a solicitação volta para o adm analisar e decidir quais serão as alçadas/papeis no sistema para ai liberar de fato o acesso dele.
+* O psicologo deve ter na matriz de credenciamento a opção de ministrar os acessos do assistente vinculado à ele.
+* Mais de uma pessoa pode gerir a administração, basta que o primeiro conceda esse papel ao outro usuário.
