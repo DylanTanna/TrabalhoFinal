@@ -202,3 +202,16 @@ Importante anotar as seguintes ideias:
 * Para cadastrar um novo funcionario, algum dos ADM permitidos deve gerar um link de cadastro, para que o novo funcionario acesse e anexe a documentação, e depois de feito a solicitação volta para o adm analisar e decidir quais serão as alçadas/papeis no sistema para ai liberar de fato o acesso dele.
 * O psicologo deve ter na matriz de credenciamento a opção de ministrar os acessos do assistente vinculado à ele.
 * Mais de uma pessoa pode gerir a administração, basta que o primeiro conceda esse papel ao outro usuário.
+
+## 11/05
+
+No processo final para a segunda entrega, todos do grupo estão colaborando para um entrega consistente, e algumas atualizações foram feitas:
+
+### A matriz de cenarios
+A matriz foi atualizada, mantendo ainda seu sentido, mas se tornando mais coesa, sem duplicidades ou cenarios desnecessários.
+
+### Casos de uso
+Foi-se divido entre os integrantes do grupo 2 cenarios para que desenvolvam os casos de uso referentes a eles
+* Todos realizaram e foi feito um documento integro, sem duplicidades ou desconexões.
+ -----
+ Após os casos de uso pronto, foi designado a tarefa de desenvolver os diagramas dos casos de uso, e junto à isso, eu (dylan) irei fazer os casos de uso resumido, do restante de cenarios não elaborados.
