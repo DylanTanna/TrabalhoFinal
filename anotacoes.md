@@ -215,3 +215,30 @@ Foi-se divido entre os integrantes do grupo 2 cenarios para que desenvolvam os c
 * Todos realizaram e foi feito um documento integro, sem duplicidades ou desconexões.
  -----
  Após os casos de uso pronto, foi designado a tarefa de desenvolver os diagramas dos casos de uso, e junto à isso, eu (dylan) irei fazer os casos de uso resumido, do restante de cenarios não elaborados.
+
+ ## 13/05
+
+Vizando atualizar a documentação que o sistema possui, foi lançado 3 tasks
+
+* BPMN
+* Documento Visão
+* Glossário
+
+Esses documentos foram atualizados pelos integrantes Antônio, Eduardo e Guilher.
+
+-------------------
+Iniciamos também o processo de criação do documento completo de casos de uso, com a descrição dos essenciais e o diagrama acoplado
+
+## 17/05
+
+Hoje todos os documentos foram juntados, levantando os requisitos (Dylan e Myllena) e finalizando todos os possivieis erros/incoerencias nos artefatos.
+
+-------
+Sobre telas: Elas foram geradas usando IA, foi feito direto o HTML pelo CODEX, assim podendo ser feito ajustes para comportar nossa ideia. Todos os codigos gerados vão ser ignorados na hora da implementação! 
+
+## 18/05
+
+Eu, Dylan, hoje fiz uma grande leitura validando a integridade, e de fato acho que pode ser uma boa entrega. Fiz muitas impressoes aqui no trabalho kkkk, e está tudo pronto para a entrega. Mas ainda pendente
+
+* Documentos de suplementação
+* Atualizar a matriz de rastreabilidade
