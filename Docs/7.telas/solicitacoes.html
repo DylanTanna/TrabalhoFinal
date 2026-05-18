@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PsicoWeb | Solicitações</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div class="app-shell" data-app-shell>
+      <main class="main">
+        <section class="content">
+          <div class="page-header">
+            <div>
+              <p class="eyebrow">Solicitações</p>
+              <h1>Reagendamentos</h1>
+              <p class="subtitle">Visão completa das solicitações de alteração de horário.</p>
+            </div>
+          </div>
+
+          <section class="card panel">
+            <div class="panel-header">
+              <h2>Solicitações recebidas</h2>
+              <span class="badge warning">Pendentes</span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Paciente</th>
+                    <th>Psicólogo</th>
+                    <th>Consulta atual</th>
+                    <th>Novo horário solicitado</th>
+                    <th>Motivo</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Camila Martins</td><td>Dra. Ana Ribeiro</td><td>14/05/2026 08:00</td><td>14/05/2026 09:00</td><td>Conflito de agenda pessoal</td><td><span class="badge warning">Pendente</span></td><td><div class="button-row"><button class="btn small primary" type="button" data-simple-action="Reagendamento aprovado">Aprovar</button><button class="btn small" type="button" data-simple-action="Reagendamento negado">Negar</button></div></td></tr>
+                  <tr><td>Rafael Teixeira</td><td>Dr. Lucas Nery</td><td>14/05/2026 09:00</td><td>14/05/2026 11:00</td><td>Compromisso profissional</td><td><span class="badge warning">Pendente</span></td><td><div class="button-row"><button class="btn small primary" type="button" data-simple-action="Reagendamento aprovado">Aprovar</button><button class="btn small" type="button" data-simple-action="Reagendamento negado">Negar</button></div></td></tr>
+                  <tr><td>Bianca Araújo</td><td>Dra. Clara Monteiro</td><td>15/05/2026 10:00</td><td>15/05/2026 14:00</td><td>Transporte indisponível</td><td><span class="badge warning">Pendente</span></td><td><div class="button-row"><button class="btn small primary" type="button" data-simple-action="Reagendamento aprovado">Aprovar</button><button class="btn small" type="button" data-simple-action="Reagendamento negado">Negar</button></div></td></tr>
+                  <tr><td>Henrique Lopes</td><td>Dr. Lucas Nery</td><td>15/05/2026 15:00</td><td>15/05/2026 16:00</td><td>Preferência por atendimento remoto</td><td><span class="badge warning">Pendente</span></td><td><div class="button-row"><button class="btn small primary" type="button" data-simple-action="Reagendamento aprovado">Aprovar</button><button class="btn small" type="button" data-simple-action="Reagendamento negado">Negar</button></div></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

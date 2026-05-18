@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PsicoWeb | Financeiro</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div class="app-shell" data-app-shell>
+      <main class="main">
+        <section class="content">
+          <div class="page-header">
+            <div>
+              <p class="eyebrow">Financeiro</p>
+              <h1>Gestão Financeira</h1>
+              <p class="subtitle">Relatório geral de pagamentos e saldos por consulta.</p>
+            </div>
+          </div>
+
+          <section class="card panel">
+            <div class="panel-header">
+              <div>
+                <p class="muted">Valor em aberto</p>
+                <h2>R$ 1.250,00</h2>
+              </div>
+              <div class="button-row">
+                <button class="btn primary" type="button">Pagamentos em aberto</button>
+                <button class="btn" type="button">Pagamentos inadimplentes</button>
+                <button class="btn" type="button">Filtrar por cliente</button>
+              </div>
+            </div>
+          </section>
+
+          <section class="card filters-card">
+            <button class="btn filter-toggle" type="button" data-filter-toggle>
+              <span>Filtros</span>
+              <span>Expandir/Recolher</span>
+            </button>
+            <div class="filters-body">
+              <div class="field">
+                <label for="status">Status</label>
+                <select id="status">
+                  <option>Todos</option>
+                  <option>Pago</option>
+                  <option>Pendente</option>
+                  <option>Inadimplente</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="periodo-inicial">Período inicial</label>
+                <input id="periodo-inicial" type="date">
+              </div>
+              <div class="field">
+                <label for="periodo-final">Período final</label>
+                <input id="periodo-final" type="date">
+              </div>
+              <div class="field">
+                <label for="psicologo">Psicólogo</label>
+                <select id="psicologo">
+                  <option>Todos</option>
+                  <option>Dr. Lucas Nery</option>
+                  <option>Dra. Ana Ribeiro</option>
+                  <option>Dra. Clara Monteiro</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="cliente">Cliente</label>
+                <input id="cliente" type="text" placeholder="Nome do paciente">
+              </div>
+            </div>
+          </section>
+
+          <section class="card panel">
+            <div class="panel-header">
+              <h2>Pagamentos</h2>
+              <span class="badge purple">Dados mockados</span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Data</th>
+                    <th>Paciente</th>
+                    <th>Psicólogo</th>
+                    <th>ID Consulta</th>
+                    <th>Status</th>
+                    <th>Valor acordado</th>
+                    <th>Valor pago</th>
+                    <th>Saldo final</th>
+                    <th>Ações</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>14/05/2026</td>
+                    <td>Camila Martins</td>
+                    <td>Dr. Lucas Nery</td>
+                    <td>CON-1024</td>
+                    <td><span class="badge success">Pago</span></td>
+                    <td>R$ 250,00</td>
+                    <td>R$ 250,00</td>
+                    <td>R$ 0,00</td>
+                    <td><button class="btn small" type="button" data-expand-row="f1">Mais detalhes</button></td>
+                  </tr>
+                  <tr class="details-row" data-details-row="f1">
+                    <td colspan="9"><div class="details-grid"><div><span>Horário</span><strong>08:00</strong></div><div><span>Método de pagamento</span><strong>Pix</strong></div><div><span>Observações</span><strong>Pagamento confirmado no ato.</strong></div></div></td>
+                  </tr>
+                  <tr>
+                    <td>14/05/2026</td>
+                    <td>Rafael Teixeira</td>
+                    <td>Dra. Ana Ribeiro</td>
+                    <td>CON-1025</td>
+                    <td><span class="badge warning">Pendente</span></td>
+                    <td>R$ 300,00</td>
+                    <td>R$ 100,00</td>
+                    <td>R$ 200,00</td>
+                    <td><button class="btn small" type="button" data-expand-row="f2">Mais detalhes</button></td>
+                  </tr>
+                  <tr class="details-row" data-details-row="f2">
+                    <td colspan="9"><div class="details-grid"><div><span>Horário</span><strong>09:00</strong></div><div><span>Método de pagamento</span><strong>Cartão de crédito</strong></div><div><span>Observações</span><strong>Paciente combinou saldo para próxima sessão.</strong></div></div></td>
+                  </tr>
+                  <tr>
+                    <td>13/05/2026</td>
+                    <td>Bianca Araújo</td>
+                    <td>Dra. Clara Monteiro</td>
+                    <td>CON-1018</td>
+                    <td><span class="badge danger">Inadimplente</span></td>
+                    <td>R$ 280,00</td>
+                    <td>R$ 0,00</td>
+                    <td>R$ 280,00</td>
+                    <td><button class="btn small" type="button" data-expand-row="f3">Mais detalhes</button></td>
+                  </tr>
+                  <tr class="details-row" data-details-row="f3">
+                    <td colspan="9"><div class="details-grid"><div><span>Horário</span><strong>10:00</strong></div><div><span>Método de pagamento</span><strong>Não informado</strong></div><div><span>Observações</span><strong>Cobrança pendente há 7 dias.</strong></div></div></td>
+                  </tr>
+                  <tr>
+                    <td>12/05/2026</td>
+                    <td>Henrique Lopes</td>
+                    <td>Dr. Lucas Nery</td>
+                    <td>CON-1009</td>
+                    <td><span class="badge success">Pago</span></td>
+                    <td>R$ 250,00</td>
+                    <td>R$ 250,00</td>
+                    <td>R$ 0,00</td>
+                    <td><button class="btn small" type="button" data-expand-row="f4">Mais detalhes</button></td>
+                  </tr>
+                  <tr class="details-row" data-details-row="f4">
+                    <td colspan="9"><div class="details-grid"><div><span>Horário</span><strong>15:00</strong></div><div><span>Método de pagamento</span><strong>Dinheiro</strong></div><div><span>Observações</span><strong>Recibo gerado para arquivo interno.</strong></div></div></td>
+                  </tr>
+                  <tr>
+                    <td>11/05/2026</td>
+                    <td>Larissa Gomes</td>
+                    <td>Dra. Ana Ribeiro</td>
+                    <td>CON-0998</td>
+                    <td><span class="badge warning">Pendente</span></td>
+                    <td>R$ 300,00</td>
+                    <td>R$ 180,00</td>
+                    <td>R$ 120,00</td>
+                    <td><button class="btn small" type="button" data-expand-row="f5">Mais detalhes</button></td>
+                  </tr>
+                  <tr class="details-row" data-details-row="f5">
+                    <td colspan="9"><div class="details-grid"><div><span>Horário</span><strong>16:00</strong></div><div><span>Método de pagamento</span><strong>Transferência</strong></div><div><span>Observações</span><strong>Comprovante parcial anexado ao atendimento.</strong></div></div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
