@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PsicoWeb | Dashboard</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div class="app-shell" data-app-shell>
+      <main class="main">
+        <section class="content">
+          <div class="page-header">
+            <div>
+              <p class="eyebrow">Dashboard</p>
+              <h1>PsicoWeb</h1>
+              <p class="subtitle">Dashboard operacional do psicólogo.</p>
+            </div>
+          </div>
+
+          <div class="grid metric-grid">
+            <article class="card metric-card"><span>Consultas hoje</span><strong>12</strong></article>
+            <article class="card metric-card"><span>Pacientes em acompanhamento</span><strong>48</strong></article>
+            <article class="card metric-card request-metric" data-requests-toggle>
+              <span>Solicitações pendentes</span>
+              <strong>4</strong>
+              <div class="requests-dropdown" data-requests-dropdown>
+                <div class="request-item">
+                  <strong>Camila Martins</strong>
+                  <span>Solicitação: Reagendamento</span>
+                  <span>Horário solicitado: 14/05 09:00</span>
+                  <div class="button-row"><button class="btn small primary" type="button">Aprovar</button><button class="btn small" type="button">Negar</button></div>
+                </div>
+                <div class="request-item">
+                  <strong>Rafael Teixeira</strong>
+                  <span>Solicitação: Reagendamento</span>
+                  <span>Horário solicitado: 14/05 11:00</span>
+                  <div class="button-row"><button class="btn small primary" type="button">Aprovar</button><button class="btn small" type="button">Negar</button></div>
+                </div>
+                <div class="request-item">
+                  <strong>Bianca Araújo</strong>
+                  <span>Solicitação: Reagendamento</span>
+                  <span>Horário solicitado: 15/05 10:00</span>
+                  <div class="button-row"><button class="btn small primary" type="button">Aprovar</button><button class="btn small" type="button">Negar</button></div>
+                </div>
+                <div class="request-item">
+                  <strong>Henrique Lopes</strong>
+                  <span>Solicitação: Reagendamento</span>
+                  <span>Horário solicitado: 15/05 16:00</span>
+                  <div class="button-row"><button class="btn small primary" type="button">Aprovar</button><button class="btn small" type="button">Negar</button></div>
+                </div>
+              </div>
+            </article>
+            <article class="card metric-card"><span>Documentos pendentes</span><strong>9</strong></article>
+          </div>
+
+          <section class="card panel">
+            <div class="panel-header">
+              <h2>Hoje</h2>
+              <span class="badge purple">Agenda operacional</span>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item completed"><time>08:00</time><strong>Camila Martins</strong><span>Realizada</span></div>
+              <div class="timeline-item current"><time>09:00</time><strong>Rafael Teixeira</strong><span>Em andamento</span></div>
+              <div class="timeline-item upcoming"><time>10:00</time><strong>Bianca Araújo</strong><span>Agendada</span></div>
+              <div class="timeline-item upcoming"><time>14:00</time><strong>Henrique Lopes</strong><span>Agendada</span></div>
+              <div class="timeline-item upcoming"><time>16:00</time><strong>Larissa Gomes</strong><span>Agendada</span></div>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PsicoWeb | Agenda</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div class="app-shell" data-app-shell>
+      <main class="main">
+        <section class="content">
+          <div class="page-header">
+            <div>
+              <p class="eyebrow">Agenda</p>
+              <h1>Consultas da semana</h1>
+              <p class="subtitle">Calendário semanal de atendimentos e disponibilidade.</p>
+            </div>
+          </div>
+
+          <section class="card panel">
+            <div class="agenda-toolbar">
+              <div class="field">
+                <label for="agenda-psicologo">Psicólogo</label>
+                <select id="agenda-psicologo"><option>Todos</option><option>Dr. Lucas Nery</option><option>Dra. Ana Ribeiro</option></select>
+              </div>
+              <div class="field">
+                <label for="agenda-periodo">Período</label>
+                <select id="agenda-periodo"><option>Semana atual</option><option>Próxima semana</option></select>
+              </div>
+              <div class="field">
+                <label for="agenda-status">Status</label>
+                <select id="agenda-status"><option>Todos</option><option>Livre</option><option>Agendado</option><option>Em atendimento</option><option>Bloqueado</option><option>Cancelado</option></select>
+              </div>
+              <div class="button-row">
+                <button class="btn" type="button" data-block-mode>Bloquear horário</button>
+                <button class="btn primary" type="button" data-open-appointment>Novo agendamento</button>
+              </div>
+            </div>
+
+            <div class="calendar">
+              <div class="calendar-cell calendar-head"></div>
+              <div class="calendar-cell calendar-head">Segunda</div>
+              <div class="calendar-cell calendar-head">Terça</div>
+              <div class="calendar-cell calendar-head">Quarta</div>
+              <div class="calendar-cell calendar-head">Quinta</div>
+              <div class="calendar-cell calendar-head">Sexta</div>
+              <div class="calendar-cell calendar-time">08:00</div>
+              <div class="calendar-cell"><div class="slot booked">Camila Martins<small>Dra. Ana</small></div></div>
+              <div class="calendar-cell"><div class="slot free">Livre<small>Triagem</small></div></div>
+              <div class="calendar-cell"></div>
+              <div class="calendar-cell"><div class="slot blocked">Bloqueado<small>Reunião</small></div></div>
+              <div class="calendar-cell"><div class="slot booked">Rafael Teixeira<small>Dr. Lucas</small></div></div>
+              <div class="calendar-cell calendar-time">09:00</div>
+              <div class="calendar-cell"></div>
+              <div class="calendar-cell"><div class="slot active">Em atendimento<small>Bianca Araújo</small></div></div>
+              <div class="calendar-cell"><div class="slot booked">Henrique Lopes<small>Dr. Lucas</small></div></div>
+              <div class="calendar-cell"></div>
+              <div class="calendar-cell"><div class="slot free">Livre<small>Retorno</small></div></div>
+              <div class="calendar-cell calendar-time">10:00</div>
+              <div class="calendar-cell"><div class="slot cancelled">Cancelado<small>Larissa Gomes</small></div></div>
+              <div class="calendar-cell"></div>
+              <div class="calendar-cell"><div class="slot free">Livre<small>Primeira consulta</small></div></div>
+              <div class="calendar-cell"><div class="slot booked">Pedro Lima<small>Dra. Clara</small></div></div>
+              <div class="calendar-cell"></div>
+              <div class="calendar-cell calendar-time">11:00</div>
+              <div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div>
+              <div class="calendar-cell calendar-time">12:00</div>
+              <div class="calendar-cell"><div class="slot blocked">Bloqueado<small>Intervalo</small></div></div>
+              <div class="calendar-cell"><div class="slot blocked">Bloqueado<small>Intervalo</small></div></div>
+              <div class="calendar-cell"><div class="slot blocked">Bloqueado<small>Intervalo</small></div></div>
+              <div class="calendar-cell"><div class="slot blocked">Bloqueado<small>Intervalo</small></div></div>
+              <div class="calendar-cell"><div class="slot blocked">Bloqueado<small>Intervalo</small></div></div>
+              <div class="calendar-cell calendar-time">13:00</div>
+              <div class="calendar-cell"><div class="slot free">Livre<small>Acolhimento</small></div></div>
+              <div class="calendar-cell"></div>
+              <div class="calendar-cell"><div class="slot booked">Isabela Rocha<small>Dra. Ana</small></div></div>
+              <div class="calendar-cell"></div>
+              <div class="calendar-cell"><div class="slot active">Em atendimento<small>Marcos Silva</small></div></div>
+              <div class="calendar-cell calendar-time">14:00</div>
+              <div class="calendar-cell"></div><div class="calendar-cell"></div>
+              <div class="calendar-cell"><div class="slot cancelled">Cancelado<small>João Pereira</small></div></div>
+              <div class="calendar-cell"><div class="slot free">Livre<small>Online</small></div></div>
+              <div class="calendar-cell"></div>
+              <div class="calendar-cell calendar-time">15:00</div>
+              <div class="calendar-cell"><div class="slot booked">Nathalia Costa<small>Dra. Clara</small></div></div>
+              <div class="calendar-cell"><div class="slot booked">Felipe Duarte<small>Dr. Lucas</small></div></div>
+              <div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div>
+              <div class="calendar-cell calendar-time">16:00</div>
+              <div class="calendar-cell"></div><div class="calendar-cell"><div class="slot free">Livre<small>Retorno</small></div></div><div class="calendar-cell"></div><div class="calendar-cell"><div class="slot booked">Aline Prado<small>Dra. Ana</small></div></div><div class="calendar-cell"></div>
+              <div class="calendar-cell calendar-time">17:00</div>
+              <div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"><div class="slot blocked">Bloqueado<small>Supervisão</small></div></div><div class="calendar-cell"></div><div class="calendar-cell"><div class="slot free">Livre<small>Plantão</small></div></div>
+              <div class="calendar-cell calendar-time">18:00</div>
+              <div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div><div class="calendar-cell"></div>
+            </div>
+            <div class="legend">
+              <span><i class="c-free"></i>Livre</span>
+              <span><i class="c-booked"></i>Agendado</span>
+              <span><i class="c-active"></i>Em atendimento</span>
+              <span><i class="c-blocked"></i>Bloqueado</span>
+              <span><i class="c-cancelled"></i>Cancelado</span>
+            </div>
+            <div class="agenda-history">
+              <div class="panel-header">
+                <h2>Histórico visual</h2>
+                <span class="badge purple">Runtime</span>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Data</th><th>Hora</th><th>Responsável</th><th>Ação</th></tr></thead>
+                  <tbody data-agenda-history>
+                    <tr><td>14/05/2026</td><td>08:10</td><td>Marina Souza</td><td>Agenda semanal carregada</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

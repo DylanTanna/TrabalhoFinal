@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PsicoWeb | Documentos do paciente</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div class="app-shell" data-app-shell>
+      <main class="main">
+        <section class="content">
+          <div class="page-header">
+            <div>
+              <p class="eyebrow">Pacientes</p>
+              <h1>Documentos do paciente</h1>
+              <p class="subtitle">Camila Martins · <span class="badge success">Ativo</span></p>
+            </div>
+            <div class="button-row">
+              <button class="btn" type="button" data-open-consent>Solicitar consentimento</button>
+              <button class="btn primary" type="button" data-open-document-modal>Novo documento</button>
+            </div>
+          </div>
+
+          <section class="card panel consent-panel">
+            <div class="panel-header">
+              <h2>Consentimento LGPD</h2>
+              <span class="badge neutral" data-consent-status>Não solicitado</span>
+            </div>
+            <div class="status-row">
+              <span class="badge neutral">Não solicitado</span>
+              <span class="badge warning">Pendente</span>
+              <span class="badge success">Assinado</span>
+              <span class="badge danger">Revogado</span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Data</th><th>Hora</th><th>Responsável</th><th>Ação</th></tr></thead>
+                <tbody data-consent-history>
+                  <tr><td>10/05/2026</td><td>09:15</td><td>Marina Souza</td><td>Cadastro do termo preparado</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="card panel">
+            <div class="tabs">
+              <button class="tab active" type="button" data-tab="historico">Histórico clínico</button>
+              <button class="tab" type="button" data-tab="prontuario">Prontuário</button>
+              <button class="tab" type="button" data-tab="documentos">Documentos</button>
+            </div>
+
+            <div class="tab-panel active" data-tab-panel="historico">
+              <div class="timeline compact">
+                <div class="timeline-item completed"><time>03/05</time><strong>Anamnese inicial realizada</strong><span>Concluído</span></div>
+                <div class="timeline-item completed"><time>07/05</time><strong>Plano terapêutico definido</strong><span>Concluído</span></div>
+                <div class="timeline-item current"><time>14/05</time><strong>Sessão de acompanhamento</strong><span>Em evolução</span></div>
+              </div>
+            </div>
+
+            <div class="tab-panel" data-tab-panel="prontuario">
+              <div class="note-block">
+                <h2>Prontuário resumido</h2>
+                <p>Paciente relata melhora gradual no manejo de ansiedade, com registro de exercícios de respiração e acompanhamento semanal.</p>
+                <p class="muted">Última anotação: 14/05/2026 por Dra. Ana Ribeiro.</p>
+              </div>
+            </div>
+
+            <div class="tab-panel" data-tab-panel="documentos">
+              <div class="panel-header">
+                <h2>Lista de documentos</h2>
+                <span class="badge purple">Mock</span>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Documento</th>
+                      <th>Tipo</th>
+                      <th>Data</th>
+                      <th>Responsável</th>
+                      <th>Ações</th>
+                    </tr>
+                  </thead>
+                  <tbody data-documents-body>
+                    <tr><td>Termo de consentimento</td><td>Administrativo</td><td>02/05/2026</td><td>Marina Souza</td><td><div class="button-row"><button class="btn small" type="button" data-simple-action="Documento visualizado">Visualizar</button><button class="btn small" type="button" data-simple-action="Download de documento">Download</button></div></td></tr>
+                    <tr><td>Anamnese inicial</td><td>Clínico</td><td>03/05/2026</td><td>Dra. Ana Ribeiro</td><td><div class="button-row"><button class="btn small" type="button" data-simple-action="Documento visualizado">Visualizar</button><button class="btn small" type="button" data-simple-action="Download de documento">Download</button></div></td></tr>
+                    <tr><td>Plano terapêutico</td><td>Clínico</td><td>07/05/2026</td><td>Dra. Ana Ribeiro</td><td><div class="button-row"><button class="btn small" type="button" data-simple-action="Documento visualizado">Visualizar</button><button class="btn small" type="button" data-simple-action="Download de documento">Download</button></div></td></tr>
+                    <tr><td>Relatório de evolução</td><td>Relatório</td><td>14/05/2026</td><td>Dra. Ana Ribeiro</td><td><div class="button-row"><button class="btn small" type="button" data-simple-action="Documento visualizado">Visualizar</button><button class="btn small" type="button" data-simple-action="Download de documento">Download</button></div></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

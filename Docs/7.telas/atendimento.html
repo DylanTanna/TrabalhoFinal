@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PsicoWeb | Atendimento</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div class="app-shell" data-app-shell>
+      <main class="main">
+        <section class="content">
+          <div class="page-header">
+            <div>
+              <p class="eyebrow">Agenda</p>
+              <h1>Atendimento clínico</h1>
+              <p class="subtitle">CDU 12 - Sessão clínica mockada.</p>
+            </div>
+          </div>
+
+          <section class="card panel attendance-card" data-session-card>
+            <div class="panel-header">
+              <div>
+                <h2>Camila Martins</h2>
+                <p class="muted" data-session-status>Sessão aguardando início</p>
+              </div>
+              <span class="timer">00:42:15</span>
+            </div>
+
+            <div class="form-grid">
+              <div class="field full">
+                <label>Observações</label>
+                <textarea>Paciente chegou no horário. Registrar evolução, intervenções e próximos passos.</textarea>
+              </div>
+              <div class="note-block">
+                <h2>Prontuário resumido</h2>
+                <p>Ansiedade em acompanhamento, com resposta positiva a exercícios de respiração e reorganização de rotina.</p>
+              </div>
+            </div>
+
+            <div class="button-row modal-actions">
+              <button class="btn primary" type="button" data-session-start>Iniciar sessão</button>
+              <button class="btn" type="button" data-session-finish>Finalizar sessão</button>
+              <button class="btn" type="button" data-next-session>Gerar próxima consulta</button>
+              <button class="btn" type="button" data-attendance-document>Emitir documento</button>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
