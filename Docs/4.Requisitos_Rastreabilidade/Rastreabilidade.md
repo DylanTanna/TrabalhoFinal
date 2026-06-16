@@ -1,112 +1,81 @@
+
 # Matriz de Rastreabilidade de Requisitos
 
-## Legenda
+## Objetivo
 
-- ENT: Entrevista
-- QUE: Questionário
-- LGPD: Lei Geral de Proteção de Dados
-- SA: Sistema Análogo
+Este documento apresenta a matriz de rastreabilidade dos requisitos do sistema, relacionando os requisitos funcionais e não funcionais às suas respectivas origens durante o processo de levantamento e análise.
 
----
-
-## Requisitos Funcionais
-
-| ID   | Descrição                                        | Fonte    |
-| ---- | -------------------------------------------------- | -------- |
-| RF01 | Cadastro de pacientes                              | SA       |
-| RF02 | Gerenciar dados dos pacientes                      | SA       |
-| RF03 | Registro de informações no primeiro atendimento  | ENT, QUE |
-| RF04 | Formulário de pré-atendimento online             | ENT      |
-| RF05 | Armazenamento do pré-atendimento                  | ENT      |
-| RF06 | Agendamento de consultas                           | ENT, QUE |
-| RF07 | Acesso à agenda por permissão                    | SA       |
-| RF08 | Agendamento 24h                                    | SA       |
-| RF09 | Configuração de horários                        | ENT      |
-| RF10 | Confirmações por WhatsApp/e-mail                 | ENT, QUE |
-| RF11 | Lembretes automáticos                             | ENT, QUE |
-| RF12 | Confirmação automática                          | SA       |
-| RF13 | Comunicação paciente-profissional                | ENT      |
-| RF14 | Notificações em tempo real                       | SA       |
-| RF15 | Prontuário eletrônico                            | ENT, QUE |
-| RF16 | Histórico clínico                                | ENT      |
-| RF17 | Associação de questionários ao prontuário      | ENT, QUE |
-| RF18 | Visualização antes da consulta                   | ENT      |
-| RF19 | Criação de questionários                        | ENT, QUE |
-| RF20 | Resposta a questionários                          | ENT, QUE |
-| RF21 | Armazenamento de documentos                        | SA       |
-| RF22 | Upload/download com metadados                      | SA       |
-| RF23 | Validação de arquivos                            | SA       |
-| RF24 | Atendimento online                                 | SA       |
-| RF25 | Configuração de atendimento online               | SA       |
-| RF26 | Sala de espera virtual                             | SA       |
-| RF27 | Registro de consultas online                       | SA       |
-| RF28 | Mensagens assíncronas                             | SA       |
-| RF29 | Exclusão/anonimização de dados                  | LGPD     |
-| RF30 | Logs de acesso                                     | LGPD     |
-| RF31 | Registro financeiro                                | SA       |
-| RF32 | Sugestão automática de preenchimento             | SA       |
-| RF33 | Classificação de risco                           | SA       |
-| RF34 | Cancelamento e reagendamento                       | ENT, QUE |
-| RF35 | Lista de espera                                    | SA       |
-| RF36 | Alerta de conflito de horário                     | ENT, QUE |
-| RF37 | Confirmação ativa pelo paciente                  | QUE      |
-| RF38 | Histórico de faltas                               | ENT, QUE |
-| RF39 | Integração com WhatsApp                          | ENT, QUE |
-| RF40 | Questionário obrigatório no primeiro atendimento | ENT, QUE |
-| RF41 | Anotações clínicas livres                       | ENT      |
+A rastreabilidade auxilia na validação dos requisitos, no entendimento das regras de negócio e na manutenção da coerência entre os documentos produzidos ao longo do projeto.
 
 ---
 
-## Requisitos Não Funcionais
+# Legenda das Origens
 
-### Segurança
-
-| ID    | Descrição                              | Fonte          |
-| ----- | ---------------------------------------- | -------------- |
-| RNF01 | Confidencialidade dos dados              | ENT, QUE, LGPD |
-| RNF02 | Proteção contra acesso não autorizado | LGPD           |
-| RNF03 | Armazenamento conforme LGPD              | ENT, QUE, LGPD |
-| RNF04 | Criptografia de senhas                   | LGPD           |
-| RNF05 | Criptografia de dados sensíveis         | LGPD           |
-| RNF06 | Uso de HTTPS                             | LGPD           |
-| RNF16 | Sigilo absoluto dos dados clínicos      | ENT, QUE, LGPD |
-| RNF17 | Consentimento do paciente                | LGPD           |
-| RNF18 | Controle de acesso por paciente          | LGPD           |
+| Sigla            | Descrição                                 |
+| ---------------- | ------------------------------------------- |
+| ENT              | Entrevistas realizadas                      |
+| QUE              | Questionários aplicados                    |
+| SA               | Sistema análogo utilizado como referência |
+| UC               | Casos de Uso Essencial                      |
+| LGPD             | Lei Geral de Proteção de Dados            |
+| ISO/IEC 25010    | Modelo de qualidade de software             |
+| RBAC             | Controle de acesso baseado em papéis       |
+| Documento Visão | Documento de visão organizacional          |
 
 ---
 
-### Controle de Acesso
+# Requisitos Funcionais
 
-| ID    | Descrição                          | Fonte     |
-| ----- | ------------------------------------ | --------- |
-| RNF07 | Autenticação                       | SA        |
-| RNF08 | Níveis de permissão                | SA        |
-| RNF09 | Restrição de acesso a prontuários | ENT, LGPD |
+| ID    | Requisito                                                                         | Origem           |
+| ----- | --------------------------------------------------------------------------------- | ---------------- |
+| RF001 | O sistema deve permitir o cadastro de pacientes.                                  | QUE, SA          |
+| RF002 | O sistema deve permitir gerenciamento do status do paciente.                      | QUE, ENT         |
+| RF003 | O sistema deve permitir configuração de agenda do profissional.                 | SA               |
+| RF004 | O sistema deve permitir agendamento de consultas.                                 | QUE, ENT, SA     |
+| RF005 | O sistema deve registrar faltas e cancelamentos de consultas.                     | QUE, ENT         |
+| RF006 | O sistema deve permitir criação e gerenciamento de prontuários eletrônicos.   | QUE, SA          |
+| RF007 | O sistema deve restringir acesso ao prontuário conforme permissões definidas.   | QUE, RBAC        |
+| RF008 | O sistema deve permitir gerenciamento de documentos clínicos.                    | QUE, ENT         |
+| RF009 | O sistema deve enviar confirmação de consultas.                                 | QUE, SA          |
+| RF010 | O sistema deve registrar obrigações financeiras relacionadas aos atendimentos.  | SA               |
+| RF011 | O sistema deve gerar termo de consentimento.                                      | LGPD             |
+| RF012 | O sistema deve registrar consentimento informado do paciente.                     | LGPD             |
+| RF013 | O sistema deve permitir cadastro institucional da clínica.                       | Documento Visão |
+| RF014 | O sistema deve validar informações institucionais da clínica.                  | RF013            |
+| RF015 | O sistema deve permitir configuração de vínculo entre psicólogo e assistente. | UC               |
+| RF016 | O sistema deve permitir consulta ao histórico financeiro.                        | SA               |
+| RF017 | O sistema deve permitir consulta consolidada das informações do paciente.       | ISO/IEC 25010    |
+| RF018 | O sistema deve permitir cadastro de colaboradores.                                | UC               |
+| RF019 | O sistema deve permitir ativação e desativação de colaboradores.              | SA               |
+| RF020 | O sistema deve permitir gerenciamento de permissões organizacionais.             | RBAC             |
+| RF021 | O sistema deve permitir inicialização do atendimento clínico.                  | UC               |
+| RF022 | O sistema deve atualizar automaticamente o status da consulta.                    | SA               |
+| RF023 | O sistema deve permitir emissão documental durante atendimento.                  | UC               |
+| RF024 | O sistema deve permitir anexação de documentos ao prontuário.                  | ENT, SA          |
 
 ---
 
-### Desempenho
+# Requisitos Não Funcionais
 
-| ID    | Descrição          | Fonte |
-| ----- | -------------------- | ----- |
-| RNF10 | Disponibilidade 24/7 | SA    |
-| RNF11 | Tempo de resposta    | SA    |
-| RNF12 | Múltiplos usuários | SA    |
-| RNF13 | Escalabilidade       | SA    |
+| ID     | Requisito                                                                     | Origem              |
+| ------ | ----------------------------------------------------------------------------- | ------------------- |
+| RNF001 | O sistema deve garantir segurança e confidencialidade dos dados armazenados. | LGPD, ENT           |
+| RNF002 | O sistema deve estar em conformidade com a LGPD.                              | LGPD                |
+| RNF003 | O sistema deve possuir autenticação e controle de acesso.                   | RBAC, LGPD          |
+| RNF004 | O sistema deve possuir desempenho adequado durante utilização.              | ISO/IEC 25010       |
+| RNF005 | O sistema deve possuir alta disponibilidade.                                  | SA                  |
+| RNF006 | O sistema deve possuir interface simples e intuitiva.                         | ENT, QUE            |
+| RNF007 | O sistema deve garantir integridade dos dados armazenados.                    | ISO/IEC 25010       |
+| RNF008 | O sistema deve manter auditoria e rastreabilidade das ações realizadas.     | LGPD, ISO/IEC 25010 |
+| RNF009 | O sistema deve suportar crescimento sem perda significativa de desempenho.    | ISO/IEC 25010       |
+| RNF010 | O sistema deve utilizar comunicação segura entre os usuários e o sistema.  | LGPD                |
+| RNF011 | O sistema deve possuir persistência e backup de dados.                       | ISO/IEC 25010       |
+| RNF012 | O sistema deve restringir notificações fora dos horários configurados.     | ENT                 |
 
 ---
 
-### Usabilidade
+# Considerações Finais
 
-| ID    | Descrição                  | Fonte    |
-| ----- | ---------------------------- | -------- |
-| RNF14 | Interface simples            | ENT, QUE |
-| RNF19 | Uso rápido durante consulta | ENT      |
+Os requisitos apresentados neste documento foram identificados a partir de entrevistas, questionários, análise de sistemas semelhantes, estudos das regras de negócio, documentação organizacional e elaboração dos casos de uso essenciais.
 
----
-
-### Integração
-
-| ID    | Descrição                         | Fonte        |
-| ----- | ----------------------------------- | ------------ |
-| RNF15 | Integração com serviços externos | ENT, QUE, SA |
+A matriz de rastreabilidade tem como objetivo manter a relação entre os requisitos e suas respectivas fontes de origem, auxiliando na validação, evolução e manutenção do sistema durante o desenvolvimento do projeto.
